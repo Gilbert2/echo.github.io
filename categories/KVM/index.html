@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="标签, Echo’s blog">
+    <meta name="keywords" content="分类: KVM, Echo’s blog">
     <meta name="description" content="Echo’s blog">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>标签 | Echo’s blog</title>
+    <title>分类: KVM | Echo’s blog</title>
     <link rel="icon" type="image/png" href="/echo.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/echo.github.io/libs/awesome/css/all.min.css">
@@ -357,109 +357,384 @@
 
     
 
-<div id="tags" class="container chip-container">
+<div id="category-cloud" class="container chip-container">
     <div class="card">
         <div class="card-content">
             <div class="tag-title center-align">
-                <i class="fas fa-tags"></i>&nbsp;&nbsp;文章标签
+                <i class="fas fa-bookmark"></i>&nbsp;&nbsp;文章分类
             </div>
             <div class="tag-chips">
                 
                 
-                <a href="/echo.github.io/tags/%E6%9E%B6%E6%9E%84/" title="架构: 6">
+                
+                <a href="/echo.github.io/categories/%E6%9E%B6%E6%9E%84/" title="架构: 6">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="架构" style="background-color: #F9EBEA;">架构
+                            style="background-color: #F9EBEA;">架构
                         <span class="tag-length">6</span>
                     </span>
                 </a>
                 
                 
-                <a href="/echo.github.io/tags/k8s/" title="k8s: 19">
+                <a href="/echo.github.io/categories/k8s/" title="k8s: 18">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="k8s" style="background-color: #F5EEF8;">k8s
-                        <span class="tag-length">19</span>
+                            style="background-color: #F5EEF8;">k8s
+                        <span class="tag-length">18</span>
                     </span>
                 </a>
                 
                 
-                <a href="/echo.github.io/tags/Docker/" title="Docker: 12">
+                <a href="/echo.github.io/categories/Docker/" title="Docker: 13">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="Docker" style="background-color: #D5F5E3;">Docker
-                        <span class="tag-length">12</span>
+                            style="background-color: #D5F5E3;">Docker
+                        <span class="tag-length">13</span>
                     </span>
                 </a>
                 
                 
-                <a href="/echo.github.io/tags/KVM/" title="KVM: 6">
+                <a href="/echo.github.io/categories/KVM/" title="KVM: 6">
                     <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="KVM" style="background-color: #E8F8F5;">KVM
+                             chip-active "
+                            style="background-color: #E8F8F5;">KVM
                         <span class="tag-length">6</span>
                     </span>
                 </a>
                 
                 
-                <a href="/echo.github.io/tags/MySQL/" title="MySQL: 9">
+                <a href="/echo.github.io/categories/MySQL/" title="MySQL: 9">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="MySQL" style="background-color: #FEF9E7;">MySQL
+                            style="background-color: #FEF9E7;">MySQL
                         <span class="tag-length">9</span>
                     </span>
                 </a>
                 
                 
-                <a href="/echo.github.io/tags/Python/" title="Python: 14">
+                <a href="/echo.github.io/categories/Python/" title="Python: 14">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="Python" style="background-color: #F8F9F9;">Python
+                            style="background-color: #F8F9F9;">Python
                         <span class="tag-length">14</span>
                     </span>
                 </a>
                 
                 
-                <a href="/echo.github.io/tags/Python%E4%B8%80%E7%B3%BB%E5%88%97%E7%BB%83%E4%B9%A0%E9%A2%98/" title="Python一系列练习题: 3">
+                <a href="/echo.github.io/categories/Python%E4%B8%80%E4%BA%9B%E5%88%97%E7%BB%83%E4%B9%A0%E9%A2%98/" title="Python一些列练习题: 3">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="Python一系列练习题" style="background-color: #82E0AA;">Python一系列练习题
+                            style="background-color: #82E0AA;">Python一些列练习题
                         <span class="tag-length">3</span>
                     </span>
                 </a>
+                
                 
             </div>
         </div>
     </div>
 </div>
 
-    
-    <link rel="stylesheet" type="text/css" href="/echo.github.io/libs/jqcloud/jqcloud.css">
-<style type="text/css">
-    #tag-wordcloud {
-        width: 100%;
-        height: 300px;
-    }
-</style>
-
-<div class="container" data-aos="fade-up">
-    <div class="card">
-        <div id="tag-wordcloud" class="card-content"></div>
-    </div>
-</div>
-
-<script type="text/javascript" src="/echo.github.io/libs/jqcloud/jqcloud-1.0.4.min.js"></script>
-<script type="text/javascript">
-    
-
-    $('#tag-wordcloud').jQCloud([{"text":"架构","weight":6,"link":"/echo.github.io/tags/架构/"},{"text":"k8s","weight":19,"link":"/echo.github.io/tags/k8s/"},{"text":"Docker","weight":12,"link":"/echo.github.io/tags/Docker/"},{"text":"KVM","weight":6,"link":"/echo.github.io/tags/KVM/"},{"text":"MySQL","weight":9,"link":"/echo.github.io/tags/MySQL/"},{"text":"Python","weight":14,"link":"/echo.github.io/tags/Python/"},{"text":"Python一系列练习题","weight":3,"link":"/echo.github.io/tags/Python一系列练习题/"}], {
-        autoResize: true
-    });
-</script>
 
     
 
+    <article id="articles" class="container articles">
+        <div class="row tags-posts">
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/echo.github.io/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/echo.github.io/medias/featureimages/23.jpg" class="responsive-img" alt="虚拟机的迁移">
+                            
+                            <span class="card-title">虚拟机的迁移</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                虚拟机的迁移：
+冷迁移（静态迁移）：  &#x2F;&#x2F;服务器需要关闭kvm01：192.168.1.100kvm02：192.168.1.200
+两台机器防火墙全部关闭，禁用selinux
+12[root@localhost ~]
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-25
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/echo.github.io/categories/KVM/" class="post-category">
+                                    KVM
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/echo.github.io/tags/KVM/">
+                            <span class="chip bg-color">KVM</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/echo.github.io/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/echo.github.io/medias/featureimages/6.jpg" class="responsive-img" alt="虚拟机的克隆">
+                            
+                            <span class="card-title">虚拟机的克隆</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                克隆：克隆的两种方式：1、手动克隆（完整克隆）：test01———-&gt;test02：（将test01克隆为test02）1）复制xml配置文件：
+1234[root@localhost ~]# cd  /etc/libvirt/qem
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-25
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/echo.github.io/categories/KVM/" class="post-category">
+                                    KVM
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/echo.github.io/tags/KVM/">
+                            <span class="chip bg-color">KVM</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/echo.github.io/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/echo.github.io/medias/featureimages/21.jpg" class="responsive-img" alt="KVM网络">
+                            
+                            <span class="card-title">KVM网络</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                NAT模式：KVM默认的网络方式，如果想要应用这种模式，防火墙需要打开，因为需要用到iptables规则
+&#x2F;&#x2F;打开防火墙添加规则，打开5900端口
+12345[root@localhost ~]# firewall-cm
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-25
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/echo.github.io/categories/KVM/" class="post-category">
+                                    KVM
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/echo.github.io/tags/KVM/">
+                            <span class="chip bg-color">KVM</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/echo.github.io/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/echo.github.io/medias/featureimages/5.jpg" class="responsive-img" alt="KVM简介">
+                            
+                            <span class="card-title">KVM简介</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                KVM简介：什么是云计算：云计算:配置各种资源的方式
+云计算的分类：基础即服务Lass平台即服务Pass软件即服务Sass如果按照不同的部署方式：公有云、私有云、混合云
+KVM介绍：虚拟化的不同的方式
+实现虚拟化的技术：基于二进制翻译的全虚
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-25
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/echo.github.io/categories/KVM/" class="post-category">
+                                    KVM
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/echo.github.io/tags/KVM/">
+                            <span class="chip bg-color">KVM</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/echo.github.io/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/echo.github.io/medias/featureimages/12.jpg" class="responsive-img" alt="KVM磁盘格式">
+                            
+                            <span class="card-title">KVM磁盘格式</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                磁盘格式：RAW：（裸格式）   &#x2F;&#x2F;占用空间较大，性能较好，但不支持虚拟机快照功能QCOW2：（copy on write）  &#x2F;&#x2F;占用空间较小，支持快照，性能比RAW稍差一些
+创建磁盘：（默认是裸
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-25
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/echo.github.io/categories/KVM/" class="post-category">
+                                    KVM
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/echo.github.io/tags/KVM/">
+                            <span class="chip bg-color">KVM</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/echo.github.io/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/echo.github.io/medias/featureimages/2.jpg" class="responsive-img" alt="KVM基本操作命令">
+                            
+                            <span class="card-title">KVM基本操作命令</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                基于操作命令1）查看虚拟机列表：
+12[root@kvm ~]# virsh  list   //查看正在运行的虚拟机[root@kvm ~]# virsh   list  --all   //查看所有虚拟机
+
+&#x2F;&#x2F;开机
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-25
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/echo.github.io/categories/KVM/" class="post-category">
+                                    KVM
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/echo.github.io/tags/KVM/">
+                            <span class="chip bg-color">KVM</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </article>
 </main>
+
+
 
 
     <footer class="page-footer bg-color">

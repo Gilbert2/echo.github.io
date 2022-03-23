@@ -451,7 +451,7 @@
             
             
             <div class="cd-timeline-img year" data-aos="zoom-in-up">
-                <a href="/echo.github.io/archives/2022">2022</a>
+                <a href="/echo.github.io/archives/2020">2020</a>
             </div>
             
 
@@ -459,13 +459,13 @@
             
             
             <div class="cd-timeline-img month" data-aos="zoom-in-up">
-                <a href="/echo.github.io/archives/2022/03">03</a>
+                <a href="/echo.github.io/archives/2020/01">01</a>
             </div>
             
 
             
             <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>23</span>
+                <span>25</span>
             </div>
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
@@ -474,24 +474,333 @@
                             <div class="card-image">
                                 
                                 
-                                <img src="/echo.github.io/medias/featureimages/18.jpg" class="responsive-img" alt="k8s数据持久化">
+                                <img src="/echo.github.io/medias/featureimages/19.jpg" class="responsive-img" alt="Docker部署LNMP环境">
                                 
-                                <span class="card-title">k8s数据持久化</span>
+                                <span class="card-title">Docker部署LNMP环境</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    k8s数据持久化Docker容器是有生命周期的，因此数据卷可以实现数据持久化
-数据卷主要解决的问题：
-
-数据持久性：当我们写入数据时，文件都是暂时性的存在，当容器崩溃后，host就会将这个容器杀死，然后重新从镜像创建容器，数据就会丢失
-数据
+                                    Docker部署LNMP环境172.16.10.0&#x2F;24
+Nginx：172.16.10.10
+Mysql：172.16.10.20
+PHP：172.16.10.30
+网站的访问主目录：&#x2F;wwwroot
+Nginx的配置
                                 
                             </div>
                             <div class="publish-info">
                                 <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2022-03-23
+                                    <i class="far fa-clock fa-fw icon-date"></i>2020-01-25
+                                </span>
+                                <span class="publish-author">
+                                    
+                                    <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                    
+                                    <a href="/echo.github.io/categories/Docker/" class="post-category">
+                                    Docker
+                                    </a>
+                                    
+                                    
+                                </span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="card-action article-tags">
+                            
+                            <a href="/echo.github.io/tags/Docker/"><span class="chip bg-color">Docker</span></a>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </article>
+        </div>
+        
+        <div class="cd-timeline-block">
+
+            
+            
+
+            
+            
+
+            
+            <div class="cd-timeline-img day" data-aos="zoom-in-up">
+                <span>25</span>
+            </div>
+            <article class="cd-timeline-content" data-aos="fade-up">
+                <div class="article col s12 m6">
+                    <div class="card">
+                        <a href="/echo.github.io/">
+                            <div class="card-image">
+                                
+                                
+                                <img src="/echo.github.io/medias/featureimages/2.jpg" class="responsive-img" alt="KVM基本操作命令">
+                                
+                                <span class="card-title">KVM基本操作命令</span>
+                            </div>
+                        </a>
+                        <div class="card-content article-content">
+                            <div class="summary block-with-text">
+                                
+                                    基于操作命令1）查看虚拟机列表：
+12[root@kvm ~]# virsh  list   //查看正在运行的虚拟机[root@kvm ~]# virsh   list  --all   //查看所有虚拟机
+
+&#x2F;&#x2F;开机
+                                
+                            </div>
+                            <div class="publish-info">
+                                <span class="publish-date">
+                                    <i class="far fa-clock fa-fw icon-date"></i>2020-01-25
+                                </span>
+                                <span class="publish-author">
+                                    
+                                    <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                    
+                                    <a href="/echo.github.io/categories/KVM/" class="post-category">
+                                    KVM
+                                    </a>
+                                    
+                                    
+                                </span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="card-action article-tags">
+                            
+                            <a href="/echo.github.io/tags/KVM/"><span class="chip bg-color">KVM</span></a>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </article>
+        </div>
+        
+        <div class="cd-timeline-block">
+
+            
+            
+
+            
+            
+
+            
+            <div class="cd-timeline-img day" data-aos="zoom-in-up">
+                <span>25</span>
+            </div>
+            <article class="cd-timeline-content" data-aos="fade-up">
+                <div class="article col s12 m6">
+                    <div class="card">
+                        <a href="/echo.github.io/">
+                            <div class="card-image">
+                                
+                                
+                                <img src="/echo.github.io/medias/featureimages/12.jpg" class="responsive-img" alt="KVM磁盘格式">
+                                
+                                <span class="card-title">KVM磁盘格式</span>
+                            </div>
+                        </a>
+                        <div class="card-content article-content">
+                            <div class="summary block-with-text">
+                                
+                                    磁盘格式：RAW：（裸格式）   &#x2F;&#x2F;占用空间较大，性能较好，但不支持虚拟机快照功能QCOW2：（copy on write）  &#x2F;&#x2F;占用空间较小，支持快照，性能比RAW稍差一些
+创建磁盘：（默认是裸
+                                
+                            </div>
+                            <div class="publish-info">
+                                <span class="publish-date">
+                                    <i class="far fa-clock fa-fw icon-date"></i>2020-01-25
+                                </span>
+                                <span class="publish-author">
+                                    
+                                    <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                    
+                                    <a href="/echo.github.io/categories/KVM/" class="post-category">
+                                    KVM
+                                    </a>
+                                    
+                                    
+                                </span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="card-action article-tags">
+                            
+                            <a href="/echo.github.io/tags/KVM/"><span class="chip bg-color">KVM</span></a>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </article>
+        </div>
+        
+        <div class="cd-timeline-block">
+
+            
+            
+
+            
+            
+
+            
+            <div class="cd-timeline-img day" data-aos="zoom-in-up">
+                <span>25</span>
+            </div>
+            <article class="cd-timeline-content" data-aos="fade-up">
+                <div class="article col s12 m6">
+                    <div class="card">
+                        <a href="/echo.github.io/">
+                            <div class="card-image">
+                                
+                                
+                                <img src="/echo.github.io/medias/featureimages/5.jpg" class="responsive-img" alt="KVM简介">
+                                
+                                <span class="card-title">KVM简介</span>
+                            </div>
+                        </a>
+                        <div class="card-content article-content">
+                            <div class="summary block-with-text">
+                                
+                                    KVM简介：什么是云计算：云计算:配置各种资源的方式
+云计算的分类：基础即服务Lass平台即服务Pass软件即服务Sass如果按照不同的部署方式：公有云、私有云、混合云
+KVM介绍：虚拟化的不同的方式
+实现虚拟化的技术：基于二进制翻译的全虚
+                                
+                            </div>
+                            <div class="publish-info">
+                                <span class="publish-date">
+                                    <i class="far fa-clock fa-fw icon-date"></i>2020-01-25
+                                </span>
+                                <span class="publish-author">
+                                    
+                                    <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                    
+                                    <a href="/echo.github.io/categories/KVM/" class="post-category">
+                                    KVM
+                                    </a>
+                                    
+                                    
+                                </span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="card-action article-tags">
+                            
+                            <a href="/echo.github.io/tags/KVM/"><span class="chip bg-color">KVM</span></a>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </article>
+        </div>
+        
+        <div class="cd-timeline-block">
+
+            
+            
+
+            
+            
+
+            
+            <div class="cd-timeline-img day" data-aos="zoom-in-up">
+                <span>25</span>
+            </div>
+            <article class="cd-timeline-content" data-aos="fade-up">
+                <div class="article col s12 m6">
+                    <div class="card">
+                        <a href="/echo.github.io/">
+                            <div class="card-image">
+                                
+                                
+                                <img src="/echo.github.io/medias/featureimages/21.jpg" class="responsive-img" alt="KVM网络">
+                                
+                                <span class="card-title">KVM网络</span>
+                            </div>
+                        </a>
+                        <div class="card-content article-content">
+                            <div class="summary block-with-text">
+                                
+                                    NAT模式：KVM默认的网络方式，如果想要应用这种模式，防火墙需要打开，因为需要用到iptables规则
+&#x2F;&#x2F;打开防火墙添加规则，打开5900端口
+12345[root@localhost ~]# firewall-cm
+                                
+                            </div>
+                            <div class="publish-info">
+                                <span class="publish-date">
+                                    <i class="far fa-clock fa-fw icon-date"></i>2020-01-25
+                                </span>
+                                <span class="publish-author">
+                                    
+                                    <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                    
+                                    <a href="/echo.github.io/categories/KVM/" class="post-category">
+                                    KVM
+                                    </a>
+                                    
+                                    
+                                </span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="card-action article-tags">
+                            
+                            <a href="/echo.github.io/tags/KVM/"><span class="chip bg-color">KVM</span></a>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </article>
+        </div>
+        
+        <div class="cd-timeline-block">
+
+            
+            
+
+            
+            
+
+            
+            <div class="cd-timeline-img day" data-aos="zoom-in-up">
+                <span>25</span>
+            </div>
+            <article class="cd-timeline-content" data-aos="fade-up">
+                <div class="article col s12 m6">
+                    <div class="card">
+                        <a href="/echo.github.io/">
+                            <div class="card-image">
+                                
+                                
+                                <img src="/echo.github.io/medias/featureimages/15.jpg" class="responsive-img" alt="ReplicaSet、DaemonSet">
+                                
+                                <span class="card-title">ReplicaSet、DaemonSet</span>
+                            </div>
+                        </a>
+                        <div class="card-content article-content">
+                            <div class="summary block-with-text">
+                                
+                                    ReplicaSet
+RC：ReplicationoController（老一代的Pod控制器）
+RS：ReplicaSet（新一代的Pod控制器）
+用于确保由其管理的控制的Pod对象副本，能够满足用户期望，多则删除，少则通过模板创建
+de
+                                
+                            </div>
+                            <div class="publish-info">
+                                <span class="publish-date">
+                                    <i class="far fa-clock fa-fw icon-date"></i>2020-01-25
                                 </span>
                                 <span class="publish-author">
                                     
@@ -522,23 +831,13 @@
 
             
             
-            
-            <div class="cd-timeline-img year" data-aos="zoom-in-up">
-                <a href="/echo.github.io/archives/2020">2020</a>
-            </div>
-            
 
             
-            
-            
-            <div class="cd-timeline-img month" data-aos="zoom-in-up">
-                <a href="/echo.github.io/archives/2020/07">07</a>
-            </div>
             
 
             
             <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>11</span>
+                <span>25</span>
             </div>
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
@@ -547,28 +846,28 @@
                             <div class="card-image">
                                 
                                 
-                                <img src="/echo.github.io/medias/featureimages/9.jpg" class="responsive-img" alt="Keepalived+mysql双主来实现MySQL-HA">
+                                <img src="/echo.github.io/medias/featureimages/6.jpg" class="responsive-img" alt="虚拟机的克隆">
                                 
-                                <span class="card-title">Keepalived+mysql双主来实现MySQL-HA</span>
+                                <span class="card-title">虚拟机的克隆</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    Keepalived+mysql双主来实现MySQL-HA生产环境中一台mysql主机存在单点故障，所以我们要确保mysql的高可用性，即两台MySQL服务器如果其中有一台MySQL服务器挂掉后，另外一台能立马接替其进行工作。
-MySQL的
+                                    克隆：克隆的两种方式：1、手动克隆（完整克隆）：test01———-&gt;test02：（将test01克隆为test02）1）复制xml配置文件：
+1234[root@localhost ~]# cd  /etc/libvirt/qem
                                 
                             </div>
                             <div class="publish-info">
                                 <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2020-07-11
+                                    <i class="far fa-clock fa-fw icon-date"></i>2020-01-25
                                 </span>
                                 <span class="publish-author">
                                     
                                     <i class="fas fa-bookmark fa-fw icon-category"></i>
                                     
-                                    <a href="/echo.github.io/categories/MySQL/" class="post-category">
-                                    MySQL
+                                    <a href="/echo.github.io/categories/KVM/" class="post-category">
+                                    KVM
                                     </a>
                                     
                                     
@@ -579,7 +878,7 @@ MySQL的
                         
                         <div class="card-action article-tags">
                             
-                            <a href="/echo.github.io/tags/MySQL/"><span class="chip bg-color">MySQL</span></a>
+                            <a href="/echo.github.io/tags/KVM/"><span class="chip bg-color">KVM</span></a>
                             
                         </div>
                         
@@ -598,7 +897,7 @@ MySQL的
 
             
             <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>11</span>
+                <span>25</span>
             </div>
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
@@ -607,29 +906,30 @@ MySQL的
                             <div class="card-image">
                                 
                                 
-                                <img src="/echo.github.io/medias/featureimages/13.jpg" class="responsive-img" alt="MySQL+MMM高可用">
+                                <img src="/echo.github.io/medias/featureimages/23.jpg" class="responsive-img" alt="虚拟机的迁移">
                                 
-                                <span class="card-title">MySQL+MMM高可用</span>
+                                <span class="card-title">虚拟机的迁移</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    MySQL+MMM高可用一、环境简述1、工作逻辑图
-2、MySQL-MMM优缺点优点：高可用性，扩展性好，出现故障自动切换，对于主主同步，在同一时间只提供一台数据库写操作，保证的数据的一致性。
-缺点：Monitor节点是单点，可以结合Kee
+                                    虚拟机的迁移：
+冷迁移（静态迁移）：  &#x2F;&#x2F;服务器需要关闭kvm01：192.168.1.100kvm02：192.168.1.200
+两台机器防火墙全部关闭，禁用selinux
+12[root@localhost ~]
                                 
                             </div>
                             <div class="publish-info">
                                 <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2020-07-11
+                                    <i class="far fa-clock fa-fw icon-date"></i>2020-01-25
                                 </span>
                                 <span class="publish-author">
                                     
                                     <i class="fas fa-bookmark fa-fw icon-category"></i>
                                     
-                                    <a href="/echo.github.io/categories/MySQL/" class="post-category">
-                                    MySQL
+                                    <a href="/echo.github.io/categories/KVM/" class="post-category">
+                                    KVM
                                     </a>
                                     
                                     
@@ -640,7 +940,7 @@ MySQL的
                         
                         <div class="card-action article-tags">
                             
-                            <a href="/echo.github.io/tags/MySQL/"><span class="chip bg-color">MySQL</span></a>
+                            <a href="/echo.github.io/tags/KVM/"><span class="chip bg-color">KVM</span></a>
                             
                         </div>
                         
@@ -659,7 +959,7 @@ MySQL的
 
             
             <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>11</span>
+                <span>24</span>
             </div>
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
@@ -668,27 +968,28 @@ MySQL的
                             <div class="card-image">
                                 
                                 
-                                <img src="/echo.github.io/medias/featureimages/13.jpg" class="responsive-img" alt="MySQL-MHA高可用方案">
+                                <img src="/echo.github.io/medias/featureimages/3.jpg" class="responsive-img" alt="Deployment">
                                 
-                                <span class="card-title">MySQL-MHA高可用方案</span>
+                                <span class="card-title">Deployment</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    MySQL-MHA高可用方案一、MHA简介MHA（Master High Availability）目前在MySQL高可用方面是一个相对成熟的解决方案，它由日本DeNA公司youshimaton（现就职于Facebook公司）开发，是一套优
+                                    Deployment
+12345678910111213141516apiVersion: extensions/v1beta1kind: Deploymentmetadata:  name: test-webspec:  replicas
                                 
                             </div>
                             <div class="publish-info">
                                 <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2020-07-11
+                                    <i class="far fa-clock fa-fw icon-date"></i>2020-01-24
                                 </span>
                                 <span class="publish-author">
                                     
                                     <i class="fas fa-bookmark fa-fw icon-category"></i>
                                     
-                                    <a href="/echo.github.io/categories/MySQL/" class="post-category">
-                                    MySQL
+                                    <a href="/echo.github.io/categories/k8s/" class="post-category">
+                                    k8s
                                     </a>
                                     
                                     
@@ -699,7 +1000,7 @@ MySQL的
                         
                         <div class="card-action article-tags">
                             
-                            <a href="/echo.github.io/tags/MySQL/"><span class="chip bg-color">MySQL</span></a>
+                            <a href="/echo.github.io/tags/k8s/"><span class="chip bg-color">k8s</span></a>
                             
                         </div>
                         
@@ -718,7 +1019,7 @@ MySQL的
 
             
             <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>11</span>
+                <span>24</span>
             </div>
             <article class="cd-timeline-content" data-aos="fade-up">
                 <div class="article col s12 m6">
@@ -727,29 +1028,27 @@ MySQL的
                             <div class="card-image">
                                 
                                 
-                                <img src="/echo.github.io/medias/featureimages/13.jpg" class="responsive-img" alt="MySQL基本操作">
+                                <img src="/echo.github.io/medias/featureimages/11.jpg" class="responsive-img" alt="Docker三剑客之docker-compose+wordpress的博客搭建">
                                 
-                                <span class="card-title">MySQL基本操作</span>
+                                <span class="card-title">Docker三剑客之docker-compose+wordpress的博客搭建</span>
                             </div>
                         </a>
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    MySQL基本操作一、结构化查询语言1、SQLSQL的含义是结构化查询语句（Structured Query Languate），是对数据库进行查询和修改操作的语言。
-2、T-SQLT-SQL ：Transact-SQL
-T-SQL是SQL
+                                    Docker三剑客：docker machine：自动化部署多台dockerHostdocker-compose：它可以同时控制多个容器docker swarm：从单个的服务向集群的形式发展为什么要做集群：高可用、高性能、高并发：防止单点故
                                 
                             </div>
                             <div class="publish-info">
                                 <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2020-07-11
+                                    <i class="far fa-clock fa-fw icon-date"></i>2020-01-24
                                 </span>
                                 <span class="publish-author">
                                     
                                     <i class="fas fa-bookmark fa-fw icon-category"></i>
                                     
-                                    <a href="/echo.github.io/categories/MySQL/" class="post-category">
-                                    MySQL
+                                    <a href="/echo.github.io/categories/Docker/" class="post-category">
+                                    Docker
                                     </a>
                                     
                                     
@@ -760,307 +1059,7 @@ T-SQL是SQL
                         
                         <div class="card-action article-tags">
                             
-                            <a href="/echo.github.io/tags/MySQL/"><span class="chip bg-color">MySQL</span></a>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
-            </article>
-        </div>
-        
-        <div class="cd-timeline-block">
-
-            
-            
-
-            
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>11</span>
-            </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/echo.github.io/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="/echo.github.io/medias/featureimages/18.jpg" class="responsive-img" alt="MySQL高级查询">
-                                
-                                <span class="card-title">MySQL高级查询</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                    MySQL高级查询本章将介绍如何修改表结构和数据的增删改查，以及mysql中常用的函数和运算符的使用方法。
-一、DDL语句（修改表结构）1、修改表语法：
-1234567891011# 修改表名alter table 旧表名 rename 新
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2020-07-11
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                    
-                                    <a href="/echo.github.io/categories/MySQL/" class="post-category">
-                                    MySQL
-                                    </a>
-                                    
-                                    
-                                </span>
-                            </div>
-                        </div>
-
-                        
-                        <div class="card-action article-tags">
-                            
-                            <a href="/echo.github.io/tags/MySQL/"><span class="chip bg-color">MySQL</span></a>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
-            </article>
-        </div>
-        
-        <div class="cd-timeline-block">
-
-            
-            
-
-            
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>11</span>
-            </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/echo.github.io/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="/echo.github.io/medias/featureimages/9.jpg" class="responsive-img" alt="XtraBacup备份与恢复">
-                                
-                                <span class="card-title">XtraBacup备份与恢复</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                    XtraBacup备份与恢复一、XtraBacup简介MySQL冷备、mysqldump、MySQL热拷贝都无法实现对数据库进行增量备份。在实际生产环境中增量备份是非常实用的，如果数据大于50G或100G，存储空间足够的情况下，可以每天进行
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2020-07-11
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                    
-                                    <a href="/echo.github.io/categories/MySQL/" class="post-category">
-                                    MySQL
-                                    </a>
-                                    
-                                    
-                                </span>
-                            </div>
-                        </div>
-
-                        
-                        <div class="card-action article-tags">
-                            
-                            <a href="/echo.github.io/tags/MySQL/"><span class="chip bg-color">MySQL</span></a>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
-            </article>
-        </div>
-        
-        <div class="cd-timeline-block">
-
-            
-            
-
-            
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>11</span>
-            </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/echo.github.io/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="/echo.github.io/medias/featureimages/2.jpg" class="responsive-img" alt="MySQL安装">
-                                
-                                <span class="card-title">MySQL安装</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                    MySQL安装一、yum方式安装MySQL 5.7CentOS 7之后的版本yum的默认源中使用MariaDB替代原先MySQL，因此安装方式较为以往有一些改变：
-1、下载mysql的源1wget http://dev.mysql.com/
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2020-07-11
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                    
-                                    <a href="/echo.github.io/categories/MySQL/" class="post-category">
-                                    MySQL
-                                    </a>
-                                    
-                                    
-                                </span>
-                            </div>
-                        </div>
-
-                        
-                        <div class="card-action article-tags">
-                            
-                            <a href="/echo.github.io/tags/MySQL/"><span class="chip bg-color">MySQL</span></a>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
-            </article>
-        </div>
-        
-        <div class="cd-timeline-block">
-
-            
-            
-
-            
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>11</span>
-            </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/echo.github.io/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="/echo.github.io/medias/featureimages/21.jpg" class="responsive-img" alt="MySQL自带工具使用介绍">
-                                
-                                <span class="card-title">MySQL自带工具使用介绍</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                    MySQL自带工具使用介绍MySQL数据库不仅提供了数据库的服务器端应用程序，同时还提供了大量的客户端工具程序，如mysql，mysqladmin，mysqldump等等 。
-1、mysql命令Mysql命令是用的最多的一个命令工具了，为用
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2020-07-11
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                    
-                                    <a href="/echo.github.io/categories/MySQL/" class="post-category">
-                                    MySQL
-                                    </a>
-                                    
-                                    
-                                </span>
-                            </div>
-                        </div>
-
-                        
-                        <div class="card-action article-tags">
-                            
-                            <a href="/echo.github.io/tags/MySQL/"><span class="chip bg-color">MySQL</span></a>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
-            </article>
-        </div>
-        
-        <div class="cd-timeline-block">
-
-            
-            
-
-            
-            
-
-            
-            <div class="cd-timeline-img day" data-aos="zoom-in-up">
-                <span>11</span>
-            </div>
-            <article class="cd-timeline-content" data-aos="fade-up">
-                <div class="article col s12 m6">
-                    <div class="card">
-                        <a href="/echo.github.io/">
-                            <div class="card-image">
-                                
-                                
-                                <img src="/echo.github.io/medias/featureimages/9.jpg" class="responsive-img" alt="初识MySQL">
-                                
-                                <span class="card-title">初识MySQL</span>
-                            </div>
-                        </a>
-                        <div class="card-content article-content">
-                            <div class="summary block-with-text">
-                                
-                                    初识MySQL一、数据库基础知识1、什么是数据库数据库的概念诞⽣生于60年前，随着信息技术和市场的快速发展，数据库技术层出不穷，随着应用的扩展和深入，数据库的数量和规模越来越大，其诞生和发展给计算机信息管理带来了一场巨大的革命。
-数据库的发
-                                
-                            </div>
-                            <div class="publish-info">
-                                <span class="publish-date">
-                                    <i class="far fa-clock fa-fw icon-date"></i>2020-07-11
-                                </span>
-                                <span class="publish-author">
-                                    
-                                    <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                    
-                                    <a href="/echo.github.io/categories/MySQL/" class="post-category">
-                                    MySQL
-                                    </a>
-                                    
-                                    
-                                </span>
-                            </div>
-                        </div>
-
-                        
-                        <div class="card-action article-tags">
-                            
-                            <a href="/echo.github.io/tags/MySQL/"><span class="chip bg-color">MySQL</span></a>
+                            <a href="/echo.github.io/tags/Docker/"><span class="chip bg-color">Docker</span></a>
                             
                         </div>
                         
@@ -1078,17 +1077,18 @@ T-SQL是SQL
     <div class="row">
         <div class="col s6 m4 l4">
             
-            <a class="left btn-floating btn-large disabled">
+            <a href="/echo.github.io/archives/page/5/"
+               class="left btn-floating btn-large waves-effect waves-light bg-color">
                 <i class="fas fa-angle-left"></i>
             </a>
             
         </div>
         <div class="page-info col m4 l4 hide-on-small-only">
-            <div class="center-align b-text-gray">1 / 7</div>
+            <div class="center-align b-text-gray">6 / 7</div>
         </div>
         <div class="col s6 m4 l4">
             
-            <a href="/echo.github.io/archives/page/2/"
+            <a href="/echo.github.io/archives/page/7/"
                class="right btn-floating btn-large waves-effect waves-light bg-color">
                 <i class="fas fa-angle-right"></i>
             </a>

@@ -306,55 +306,9 @@
 </header>
 
     
-<style>
-    .carousel-control {
-        width: 45px;
-        height: 45px;
-        line-height: 55px;
-        border-radius: 45px;
-        background: transparent;
-        cursor: pointer;
-        z-index: 100;
-    }
-
-    #prev-cover {
-        position: absolute;
-        top: 48%;
-        left: 8px;
-    }
-
-    #next-cover {
-        position: absolute;
-        top: 48%;
-        right: 8px;;
-    }
-
-    #prev-cover i {
-        margin-right: 3px;
-    }
-
-    #next-cover i {
-        margin-left: 3px;
-    }
-
-    .carousel-control:hover {
-        background-color: rgba(0, 0, 0, .4);
-    }
-
-    .carousel-control i {
-        color: #fff;
-        font-size: 2.4rem;
-    }
-</style>
-
-
-
-<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
-    
-
-    <div class="carousel-item  white-text bg-cover about-cover">
-        <div class="container">
-            <div class="row">
+    <div class="bg-cover pd-header about-cover">
+    <div class="container">
+    <div class="row">
     <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
         <div class="brand">
             <div class="title center-align">
@@ -397,159 +351,12 @@
 </script>
 
 
-
-            <div class="cover-btns">
-                <a href="#indexCard" class="waves-effect waves-light btn">
-                    <i class="fa fa-angle-double-down"></i>开始阅读
-                </a>
-
-                
-                    <a href="https://github.com/Gilbert2/echo.github.io" class="waves-effect waves-light btn" target="_blank">
-                        <i class="fab fa-github-alt"></i>Github
-                    </a>
-                
-            </div>
-            <div class="cover-social-link">
-    <a href="https://github.com/Gilbert2/echo.github.io" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:maisy0316@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2960824193" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2960824193" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="/echo.github.io/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
-    </a>
-
-</div>
-        </div>
     </div>
-
-    
 </div>
-
-<script>
-    $(function () {
-        let coverSlider = $('.carousel');
-
-        //用户触摸轮播自动 restartPlay 是否生效
-        let initUserPressedOrDraggedActive = false
-
-        //用户触摸轮播自动 restartPlay
-        function initUserPressedOrDragged(instance) {
-            setInterval(() => {
-                if (instance.pressed || instance.dragged) {
-                    // console.log('initUserPressedOrDragged: ',instance.pressed,instance.dragged)
-                    restartPlay()
-                }
-            }, 1000)
-        }
-
-        coverSlider.carousel({
-            duration: Number('120'),
-            fullWidth: true,
-            indicators: 'true' === 'true',
-            onCycleTo() {
-                if (!initUserPressedOrDraggedActive) {
-                    // console.log('initUserPressedOrDraggedActive')
-                    initUserPressedOrDragged(this)
-                    initUserPressedOrDraggedActive = true
-                }
-            },
-        })
-
-        let carouselIntervalId;
-        
-        // Loop to call the next cover article picture.
-        let autoCarousel = function () {
-            carouselIntervalId = setInterval(function () {
-                coverSlider.carousel('next');
-            }, 5000);
-        };
-        autoCarousel();
-        
-
-        function restartPlay() {
-            
-            clearInterval(carouselIntervalId);
-            autoCarousel();
-            
-        };
-
-        
-        // prev and next cover post.
-        $('#prev-cover').click(function () {
-            coverSlider.carousel('prev');
-            restartPlay();
-        });
-        $('#next-cover').click(function () {
-            coverSlider.carousel('next');
-            restartPlay();
-        });
-        
-    });
-</script>
-
 
 
 <main class="content">
 
-    
-    <div id="indexCard" class="index-card">
-        <div class="container ">
-            <div class="card">
-                <div class="card-content">
-                    
-                        <div class="dream">
-    
-    <div class="title center-align">
-        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;我的梦想
-    </div>
-    
-    <div class="row">
-        <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            不是每个人都应该像我这样去建造一座水晶大教堂，但是每个人都应该拥有自己的梦想，设计自己的梦想，追求自己的梦想，实现自己的梦想。梦想是生命的灵魂，是心灵的灯塔，是引导人走向成功的信仰。有了崇高的梦想，只要矢志不渝地追求，梦想就会成为现实，奋斗就会变成壮举，生命就会创造奇迹。——罗伯·舒乐
-        </div>
-    </div>
-</div>
-
-                    
-
-                    
-
-                    
-
-                    
-                    <div id="recommend-sections" class="recommend">
-                        
-
-
-
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
     
 
     
@@ -565,25 +372,22 @@
                         <div class="card-image">
                             
                             
-                            <img src="/echo.github.io/medias/featureimages/18.jpg" class="responsive-img" alt="k8s数据持久化">
+                            <img src="/echo.github.io/medias/featureimages/4.jpg" class="responsive-img" alt="Heldm工具部署">
                             
-                            <span class="card-title">k8s数据持久化</span>
+                            <span class="card-title">Heldm工具部署</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                k8s数据持久化Docker容器是有生命周期的，因此数据卷可以实现数据持久化
-数据卷主要解决的问题：
-
-数据持久性：当我们写入数据时，文件都是暂时性的存在，当容器崩溃后，host就会将这个容器杀死，然后重新从镜像创建容器，数据就会丢失
-数据
+                                Helm
+在Kubernetes中部署容器云的应用也是一项有挑战性的工作，Helm就是为了简化在Kubernetes中安装部署容器云应用的一个客户端工具。通过helm能够帮助开发者定义、安装和升级Kubernetes中的容器云应用，同时，也
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-23
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-29
                             </span>
                             <span class="publish-author">
                                 
@@ -618,29 +422,29 @@
                         <div class="card-image">
                             
                             
-                            <img src="/echo.github.io/medias/featureimages/9.jpg" class="responsive-img" alt="Keepalived+mysql双主来实现MySQL-HA">
+                            <img src="/echo.github.io/medias/featureimages/1.jpg" class="responsive-img" alt="HPA">
                             
-                            <span class="card-title">Keepalived+mysql双主来实现MySQL-HA</span>
+                            <span class="card-title">HPA</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                Keepalived+mysql双主来实现MySQL-HA生产环境中一台mysql主机存在单点故障，所以我们要确保mysql的高可用性，即两台MySQL服务器如果其中有一台MySQL服务器挂掉后，另外一台能立马接替其进行工作。
-MySQL的
+                                HPA
+HPA的全称为Horizontal Pod Autoscaling，它可以根据当前pod资源的使用率（如CPU、磁盘、内存等），进行副本数的动态的扩容与缩容，以便减轻各个pod的压力。当pod负载达到一定的阈值后，会根据扩缩容的策略
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-29
                             </span>
                             <span class="publish-author">
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/echo.github.io/categories/MySQL/" class="post-category">
-                                    MySQL
+                                <a href="/echo.github.io/categories/k8s/" class="post-category">
+                                    k8s
                                 </a>
                                 
                                 
@@ -651,8 +455,8 @@ MySQL的
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/echo.github.io/tags/MySQL/">
-                            <span class="chip bg-color">MySQL</span>
+                        <a href="/echo.github.io/tags/k8s/">
+                            <span class="chip bg-color">k8s</span>
                         </a>
                         
                     </div>
@@ -668,30 +472,32 @@ MySQL的
                         <div class="card-image">
                             
                             
-                            <img src="/echo.github.io/medias/featureimages/13.jpg" class="responsive-img" alt="MySQL+MMM高可用">
+                            <img src="/echo.github.io/medias/featureimages/4.jpg" class="responsive-img" alt="k8s监控">
                             
-                            <span class="card-title">MySQL+MMM高可用</span>
+                            <span class="card-title">k8s监控</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                MySQL+MMM高可用一、环境简述1、工作逻辑图
-2、MySQL-MMM优缺点优点：高可用性，扩展性好，出现故障自动切换，对于主主同步，在同一时间只提供一台数据库写操作，保证的数据的一致性。
-缺点：Monitor节点是单点，可以结合Kee
+                                一、k8s的UI访问界面-dashboard
+General-purpose web UI for Kubernetes clusters
+用于Kubernetes集群的通用web UI
+
+在dashbord中，虽然可以做到创建、删除、修改
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-28
                             </span>
                             <span class="publish-author">
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/echo.github.io/categories/MySQL/" class="post-category">
-                                    MySQL
+                                <a href="/echo.github.io/categories/k8s/" class="post-category">
+                                    k8s
                                 </a>
                                 
                                 
@@ -702,8 +508,8 @@ MySQL的
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/echo.github.io/tags/MySQL/">
-                            <span class="chip bg-color">MySQL</span>
+                        <a href="/echo.github.io/tags/k8s/">
+                            <span class="chip bg-color">k8s</span>
                         </a>
                         
                     </div>
@@ -719,28 +525,29 @@ MySQL的
                         <div class="card-image">
                             
                             
-                            <img src="/echo.github.io/medias/featureimages/13.jpg" class="responsive-img" alt="MySQL-MHA高可用方案">
+                            <img src="/echo.github.io/medias/featureimages/12.jpg" class="responsive-img" alt="Ingress实现虚拟主机和Https代理访问">
                             
-                            <span class="card-title">MySQL-MHA高可用方案</span>
+                            <span class="card-title">Ingress实现虚拟主机和Https代理访问</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                MySQL-MHA高可用方案一、MHA简介MHA（Master High Availability）目前在MySQL高可用方面是一个相对成熟的解决方案，它由日本DeNA公司youshimaton（现就职于Facebook公司）开发，是一套优
+                                Ingress实现虚拟主机和Https代理访问虚拟主机，也叫“网站空间”，就是把一台运行在互联网上的物理服务器划分成多个“虚拟”服务器。虚拟主机技术极大的促进了网络技术的应用和普及。同时虚拟主机的租用服务也成了网络时代的一种新型经济形式
+1
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-26
                             </span>
                             <span class="publish-author">
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/echo.github.io/categories/MySQL/" class="post-category">
-                                    MySQL
+                                <a href="/echo.github.io/categories/k8s/" class="post-category">
+                                    k8s
                                 </a>
                                 
                                 
@@ -751,8 +558,8 @@ MySQL的
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/echo.github.io/tags/MySQL/">
-                            <span class="chip bg-color">MySQL</span>
+                        <a href="/echo.github.io/tags/k8s/">
+                            <span class="chip bg-color">k8s</span>
                         </a>
                         
                     </div>
@@ -768,30 +575,31 @@ MySQL的
                         <div class="card-image">
                             
                             
-                            <img src="/echo.github.io/medias/featureimages/13.jpg" class="responsive-img" alt="MySQL基本操作">
+                            <img src="/echo.github.io/medias/featureimages/9.jpg" class="responsive-img" alt="Ingress原理及配置">
                             
-                            <span class="card-title">MySQL基本操作</span>
+                            <span class="card-title">Ingress原理及配置</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                MySQL基本操作一、结构化查询语言1、SQLSQL的含义是结构化查询语句（Structured Query Languate），是对数据库进行查询和修改操作的语言。
-2、T-SQLT-SQL ：Transact-SQL
-T-SQL是SQL
+                                Ingress在Kubernetes中，服务和Pod的IP地址仅可以在集群网络内部使用，对于集群外的应用是不可见的。为了使外部的应用能够访问集群内的服务，在Kubernetes中目前提供了以下几种方案：
+
+NodePort
+LoadBala
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-24
                             </span>
                             <span class="publish-author">
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/echo.github.io/categories/MySQL/" class="post-category">
-                                    MySQL
+                                <a href="/echo.github.io/categories/k8s/" class="post-category">
+                                    k8s
                                 </a>
                                 
                                 
@@ -802,8 +610,8 @@ T-SQL是SQL
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/echo.github.io/tags/MySQL/">
-                            <span class="chip bg-color">MySQL</span>
+                        <a href="/echo.github.io/tags/k8s/">
+                            <span class="chip bg-color">k8s</span>
                         </a>
                         
                     </div>
@@ -819,30 +627,32 @@ T-SQL是SQL
                         <div class="card-image">
                             
                             
-                            <img src="/echo.github.io/medias/featureimages/18.jpg" class="responsive-img" alt="MySQL高级查询">
+                            <img src="/echo.github.io/medias/featureimages/15.jpg" class="responsive-img" alt="ConfigMap、Secret">
                             
-                            <span class="card-title">MySQL高级查询</span>
+                            <span class="card-title">ConfigMap、Secret</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                MySQL高级查询本章将介绍如何修改表结构和数据的增删改查，以及mysql中常用的函数和运算符的使用方法。
-一、DDL语句（修改表结构）1、修改表语法：
-1234567891011# 修改表名alter table 旧表名 rename 新
+                                ConfigMap、Secret为什么有这两个东西：
+我们在kubernetes上部署应用的时候，经常会需要传一些配置给我们的应用，比如数据库地址啊，用户名密码啊之类的。我们要做到这个，有好多种方案，比如：
+
+
+我们可以直接在打包镜像的时候
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-17
                             </span>
                             <span class="publish-author">
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/echo.github.io/categories/MySQL/" class="post-category">
-                                    MySQL
+                                <a href="/echo.github.io/categories/k8s/" class="post-category">
+                                    k8s
                                 </a>
                                 
                                 
@@ -853,8 +663,8 @@ T-SQL是SQL
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/echo.github.io/tags/MySQL/">
-                            <span class="chip bg-color">MySQL</span>
+                        <a href="/echo.github.io/tags/k8s/">
+                            <span class="chip bg-color">k8s</span>
                         </a>
                         
                     </div>
@@ -870,28 +680,31 @@ T-SQL是SQL
                         <div class="card-image">
                             
                             
-                            <img src="/echo.github.io/medias/featureimages/9.jpg" class="responsive-img" alt="XtraBacup备份与恢复">
+                            <img src="/echo.github.io/medias/featureimages/2.jpg" class="responsive-img" alt="StatefulSet">
                             
-                            <span class="card-title">XtraBacup备份与恢复</span>
+                            <span class="card-title">StatefulSet</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                XtraBacup备份与恢复一、XtraBacup简介MySQL冷备、mysqldump、MySQL热拷贝都无法实现对数据库进行增量备份。在实际生产环境中增量备份是非常实用的，如果数据大于50G或100G，存储空间足够的情况下，可以每天进行
+                                StatefulSetRC、RS、Deployment、DS（DaemonSet）这些Pod控制器都是面向无状态的服务，它们所管理的Pod的IP、名字、启停顺序等都是随机的
+这些Pod控制器都有一个相同点    
+
+​    templat
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-12
                             </span>
                             <span class="publish-author">
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/echo.github.io/categories/MySQL/" class="post-category">
-                                    MySQL
+                                <a href="/echo.github.io/categories/k8s/" class="post-category">
+                                    k8s
                                 </a>
                                 
                                 
@@ -902,8 +715,8 @@ T-SQL是SQL
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/echo.github.io/tags/MySQL/">
-                            <span class="chip bg-color">MySQL</span>
+                        <a href="/echo.github.io/tags/k8s/">
+                            <span class="chip bg-color">k8s</span>
                         </a>
                         
                     </div>
@@ -919,29 +732,29 @@ T-SQL是SQL
                         <div class="card-image">
                             
                             
-                            <img src="/echo.github.io/medias/featureimages/2.jpg" class="responsive-img" alt="MySQL安装">
+                            <img src="/echo.github.io/medias/featureimages/3.jpg" class="responsive-img" alt="k8s的存储类">
                             
-                            <span class="card-title">MySQL安装</span>
+                            <span class="card-title">k8s的存储类</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                MySQL安装一、yum方式安装MySQL 5.7CentOS 7之后的版本yum的默认源中使用MariaDB替代原先MySQL，因此安装方式较为以往有一些改变：
-1、下载mysql的源1wget http://dev.mysql.com/
+                                k8s存储类如果，k8s集群中，有很多类似的PV，PVC在去向PV申请空间的时候，不仅会考虑名称以及访问控制模式，还会考虑你申请空间的大小，会分配给你最合适大小的PV
+运行一个web服务，采用Deployment资源，基于nginx镜像。数
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-11
                             </span>
                             <span class="publish-author">
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/echo.github.io/categories/MySQL/" class="post-category">
-                                    MySQL
+                                <a href="/echo.github.io/categories/k8s/" class="post-category">
+                                    k8s
                                 </a>
                                 
                                 
@@ -952,8 +765,8 @@ T-SQL是SQL
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/echo.github.io/tags/MySQL/">
-                            <span class="chip bg-color">MySQL</span>
+                        <a href="/echo.github.io/tags/k8s/">
+                            <span class="chip bg-color">k8s</span>
                         </a>
                         
                     </div>
@@ -969,29 +782,46 @@ T-SQL是SQL
                         <div class="card-image">
                             
                             
-                            <img src="/echo.github.io/medias/featureimages/21.jpg" class="responsive-img" alt="MySQL自带工具使用介绍">
+                            <img src="/echo.github.io/medias/featureimages/16.jpg" class="responsive-img" alt="Docker swarm">
                             
-                            <span class="card-title">MySQL自带工具使用介绍</span>
+                            <span class="card-title">Docker swarm</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                MySQL自带工具使用介绍MySQL数据库不仅提供了数据库的服务器端应用程序，同时还提供了大量的客户端工具程序，如mysql，mysqladmin，mysqldump等等 。
-1、mysql命令Mysql命令是用的最多的一个命令工具了，为用
+                                Docker swarm
+
+docker swarm集群：三剑客之一
+
+
+
+docker01
+192.168.1.70
+node1
+
+
+
+docker02
+192.168.1.50
+node2
+
+
+docker03
+192.168.1.40
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-25
                             </span>
                             <span class="publish-author">
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/echo.github.io/categories/MySQL/" class="post-category">
-                                    MySQL
+                                <a href="/echo.github.io/categories/Docker/" class="post-category">
+                                    Docker
                                 </a>
                                 
                                 
@@ -1002,8 +832,8 @@ T-SQL是SQL
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/echo.github.io/tags/MySQL/">
-                            <span class="chip bg-color">MySQL</span>
+                        <a href="/echo.github.io/tags/Docker/">
+                            <span class="chip bg-color">Docker</span>
                         </a>
                         
                     </div>
@@ -1019,29 +849,30 @@ T-SQL是SQL
                         <div class="card-image">
                             
                             
-                            <img src="/echo.github.io/medias/featureimages/9.jpg" class="responsive-img" alt="初识MySQL">
+                            <img src="/echo.github.io/medias/featureimages/5.jpg" class="responsive-img" alt="Docker架构+Docker镜像分层+Dockerfile">
                             
-                            <span class="card-title">初识MySQL</span>
+                            <span class="card-title">Docker架构+Docker镜像分层+Dockerfile</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                初识MySQL一、数据库基础知识1、什么是数据库数据库的概念诞⽣生于60年前，随着信息技术和市场的快速发展，数据库技术层出不穷，随着应用的扩展和深入，数据库的数量和规模越来越大，其诞生和发展给计算机信息管理带来了一场巨大的革命。
-数据库的发
+                                Docker架构：
+Docker架构总结：
+Docker是属于C&#x2F;S架构，用户是使用 Docker Client 与 Docker Daemon 建立通信，并发送请求。请求接收后，Docker server通过http协议与路由，
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-25
                             </span>
                             <span class="publish-author">
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/echo.github.io/categories/MySQL/" class="post-category">
-                                    MySQL
+                                <a href="/echo.github.io/categories/Docker/" class="post-category">
+                                    Docker
                                 </a>
                                 
                                 
@@ -1052,8 +883,8 @@ T-SQL是SQL
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/echo.github.io/tags/MySQL/">
-                            <span class="chip bg-color">MySQL</span>
+                        <a href="/echo.github.io/tags/Docker/">
+                            <span class="chip bg-color">Docker</span>
                         </a>
                         
                     </div>
@@ -1069,29 +900,32 @@ T-SQL是SQL
                         <div class="card-image">
                             
                             
-                            <img src="/echo.github.io/medias/featureimages/16.jpg" class="responsive-img" alt="Varnish4.0缓存代理配置">
+                            <img src="/echo.github.io/medias/featureimages/4.jpg" class="responsive-img" alt="Docker的基本操作命令">
                             
-                            <span class="card-title">Varnish4.0缓存代理配置</span>
+                            <span class="card-title">Docker的基本操作命令</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                Varnish4.0缓存代理配置一、Varnish原理1、Varnish简介
-varnish 缓存是 web 应用加速器，同时也作为 http 反向缓存代理。你可以安装 varnish 在任何http 的前端，同时配置它缓存内容。与传统的 
+                                Docker的基本操作命令：&#x2F;&#x2F;查找镜像：
+1[root@localhost ~]# docker search mysql //默认在docker hub公共仓库进行查找
+
+
+&#x2F;&#x2F;拉取镜像，下载镜像
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-25
                             </span>
                             <span class="publish-author">
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/echo.github.io/categories/%E6%9E%B6%E6%9E%84/" class="post-category">
-                                    架构
+                                <a href="/echo.github.io/categories/Docker/" class="post-category">
+                                    Docker
                                 </a>
                                 
                                 
@@ -1102,8 +936,8 @@ varnish 缓存是 web 应用加速器，同时也作为 http 反向缓存代理�
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/echo.github.io/tags/%E6%9E%B6%E6%9E%84/">
-                            <span class="chip bg-color">架构</span>
+                        <a href="/echo.github.io/tags/Docker/">
+                            <span class="chip bg-color">Docker</span>
                         </a>
                         
                     </div>
@@ -1119,28 +953,33 @@ varnish 缓存是 web 应用加速器，同时也作为 http 反向缓存代理�
                         <div class="card-image">
                             
                             
-                            <img src="/echo.github.io/medias/featureimages/12.jpg" class="responsive-img" alt="Nginx优化与防盗链+单机部署LNMP">
+                            <img src="/echo.github.io/medias/featureimages/0.jpg" class="responsive-img" alt="Docker的底层原理">
                             
-                            <span class="card-title">Nginx优化与防盗链+单机部署LNMP</span>
+                            <span class="card-title">Docker的底层原理</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                Nginx优化与防盗链+单机部署LNMPNginx 是俄罗斯人编写的十分轻量级的 HTTP 服务器,Nginx，它的发音为“engine X”，是一个高性能的 HTTP 和反向代理服务器，同时也是一个 IMAP&#x2F;POP3&#x2F
+                                Docker底层原理如果虚拟机内服务对内核版本有要求，这个服务就不太适合用docker来实现了
+Busybox：欺骗层
+解耦：解除耦合、解除冲突
+耦合：冲突现象
+run—–&gt;Centos系统（nginx、web）
+对于docker h
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-13
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-01-25
                             </span>
                             <span class="publish-author">
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/echo.github.io/categories/%E6%9E%B6%E6%9E%84/" class="post-category">
-                                    架构
+                                <a href="/echo.github.io/categories/Docker/" class="post-category">
+                                    Docker
                                 </a>
                                 
                                 
@@ -1151,8 +990,8 @@ varnish 缓存是 web 应用加速器，同时也作为 http 反向缓存代理�
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/echo.github.io/tags/%E6%9E%B6%E6%9E%84/">
-                            <span class="chip bg-color">架构</span>
+                        <a href="/echo.github.io/tags/Docker/">
+                            <span class="chip bg-color">Docker</span>
                         </a>
                         
                     </div>
@@ -1171,17 +1010,18 @@ varnish 缓存是 web 应用加速器，同时也作为 http 反向缓存代理�
     <div class="row">
         <div class="col s6 m4 l4">
             
-            <a class="left btn-floating btn-large disabled">
+            <a href="/echo.github.io/page/3/"
+               class="left btn-floating btn-large waves-effect waves-light bg-color">
                 <i class="fas fa-angle-left"></i>
             </a>
             
         </div>
         <div class="page-info col m4 l4 hide-on-small-only">
-            <div class="center-align b-text-gray">1 / 6</div>
+            <div class="center-align b-text-gray">4 / 6</div>
         </div>
         <div class="col s6 m4 l4">
             
-            <a href="/echo.github.io/page/2/"
+            <a href="/echo.github.io/page/5/"
                class="right btn-floating btn-large waves-effect waves-light bg-color">
                 <i class="fas fa-angle-right"></i>
             </a>
