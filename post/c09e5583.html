@@ -4,9 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="text, Echo’s blog">
-    <meta name="description" content="hello this is test!!!
-">
+    <meta name="keywords" content="Python列表(list)练习题, Echo’s blog">
+    <meta name="description" content="Python列表(list)练习题@[toc]
+一、姓名：
+将一些朋友的姓名存储在一个列表中，并将其命名为names。依次访问该列表中的每个元素，从而将每个朋友的姓名都打印出来
+
+names = [&#39;张三&#39;, &#39;李四&#39;, &#39;王五&#39;, &#39;赵六">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +21,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>text | Echo’s blog</title>
+    <title>Python列表(list)练习题 | Echo’s blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -310,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">text</h1>
+                    <h1 class="description center-align post-title">Python列表(list)练习题</h1>
                 </div>
             </div>
         </div>
@@ -429,12 +432,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Python%E4%B8%80%E7%B3%BB%E5%88%97%E7%BB%83%E4%B9%A0%E9%A2%98/">
+                                <span class="chip bg-color">Python一系列练习题</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Python%E4%B8%80%E4%BA%9B%E5%88%97%E7%BB%83%E4%B9%A0%E9%A2%98/" class="post-category">
+                                Python一些列练习题
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -443,7 +459,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-03-24
+                    2020-05-29
                 </div>
                 
 
@@ -467,7 +483,196 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>hello this is test!!!</p>
+                <h3 id="Python列表-list-练习题"><a href="#Python列表-list-练习题" class="headerlink" title="Python列表(list)练习题"></a>Python列表(list)练习题</h3><p>@[toc]</p>
+<h4 id="一、姓名："><a href="#一、姓名：" class="headerlink" title="一、姓名："></a>一、姓名：</h4><blockquote>
+<p>将一些朋友的姓名存储在一个列表中，并将其命名为names。依次访问该列表中的每个元素，从而将每个朋友的姓名都打印出来</p>
+</blockquote>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">names <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'张三'</span><span class="token punctuation">,</span> <span class="token string">'李四'</span><span class="token punctuation">,</span> <span class="token string">'王五'</span><span class="token punctuation">,</span> <span class="token string">'赵六'</span><span class="token punctuation">,</span> <span class="token string">'田七'</span><span class="token punctuation">]</span>
+<span class="token keyword">for</span> name <span class="token keyword">in</span> names<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-tex" data-language="tex"><code class="language-tex">张三
+李四
+王五
+赵六
+田七<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="二、问候语"><a href="#二、问候语" class="headerlink" title="二、问候语"></a>二、问候语</h4><blockquote>
+<p>继续使用上一个的列表，但不打印每个朋友的姓名，而为每人打印一条消息。</p>
+<p>每条消息都包含相同的问候语，但抬头为相应朋友的姓名</p>
+</blockquote>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">names <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'张三'</span><span class="token punctuation">,</span> <span class="token string">'李四'</span><span class="token punctuation">,</span> <span class="token string">'王五'</span><span class="token punctuation">,</span> <span class="token string">'赵六'</span><span class="token punctuation">,</span> <span class="token string">'田七'</span><span class="token punctuation">]</span>
+<span class="token keyword">for</span> name <span class="token keyword">in</span> names<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>name <span class="token operator">+</span> <span class="token string">'，Good moning!'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-tex" data-language="tex"><code class="language-tex">张三，Good moning!
+李四，Good moning!
+王五，Good moning!
+赵六，Good moning!
+田七，Good moning!<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="三、自己的列表"><a href="#三、自己的列表" class="headerlink" title="三、自己的列表"></a>三、自己的列表</h4><blockquote>
+<p> 想想你喜欢的通勤方式，如骑摩托车或开汽车，并创建一个包含多种通勤方式的列表。根据该列表打印一系列有关这些通勤方式的宣言，如“I would like to own a Honda motorcycle”。</p>
+</blockquote>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">commuting <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'car'</span><span class="token punctuation">,</span> <span class="token string">'bicycle'</span><span class="token punctuation">,</span> <span class="token string">'motorcycle'</span><span class="token punctuation">]</span>
+brands <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'Benz'</span><span class="token punctuation">,</span> <span class="token string">'GIANT'</span><span class="token punctuation">,</span> <span class="token string">'Honda'</span><span class="token punctuation">]</span>
+<span class="token keyword">for</span> num <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'I would like to own a '</span> <span class="token operator">+</span> brands<span class="token punctuation">[</span>num<span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token string">' '</span> <span class="token operator">+</span> commuting<span class="token punctuation">[</span>num<span class="token punctuation">]</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-tex" data-language="tex"><code class="language-tex">I would like to own a Benz car
+I would like to own a GIANT bicycle
+I would like to own a Honda motorcycle<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="四、嘉宾名单"><a href="#四、嘉宾名单" class="headerlink" title="四、嘉宾名单"></a>四、嘉宾名单</h4><blockquote>
+<p>如果你可以邀请任何人一起共进晚餐（无论是在世的还是故去的），你会邀请哪些人？请创建一个列表，其中包含至少3你想邀请的人；然后，使用这个列表打印消息，邀请这些人来与你共进晚餐</p>
+</blockquote>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">guests <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"Tom"</span><span class="token punctuation">,</span> <span class="token string">"John"</span><span class="token punctuation">,</span> <span class="token string">"Mike"</span><span class="token punctuation">,</span> <span class="token string">"Padma"</span><span class="token punctuation">]</span>
+<span class="token keyword">for</span> guest <span class="token keyword">in</span> guests<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>guest <span class="token operator">+</span> <span class="token string">", 我可以邀请你共进晚餐吗?"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-tex" data-language="tex"><code class="language-tex">Tom, 我可以邀请你共进晚餐吗?
+John, 我可以邀请你共进晚餐吗?
+Mike, 我可以邀请你共进晚餐吗?
+Padma, 我可以邀请你共进晚餐吗?<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="五、修改嘉宾名单"><a href="#五、修改嘉宾名单" class="headerlink" title="五、修改嘉宾名单"></a>五、修改嘉宾名单</h4><blockquote>
+<p>你刚得知有位嘉宾无法赴约，因此需要另外邀请一位嘉宾。</p>
+<p>以完成练习4时编写的程序为基础，在程序末尾添加一条print语句，指出哪位嘉宾无法赴约。</p>
+<p>修改嘉宾名单，将无法赴约的嘉宾的姓名替换为新邀请的嘉宾的姓名。</p>
+<p>再次打印一系列消息，向名单中的每位嘉宾发出邀请</p>
+</blockquote>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span>guests<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token string">"不能一起吃饭!"</span> <span class="token operator">+</span> <span class="token string">"\n"</span><span class="token punctuation">)</span>
+guests<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'Bob'</span>
+<span class="token keyword">for</span> guest <span class="token keyword">in</span> guests<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>guest <span class="token operator">+</span> <span class="token string">", 我可以邀请你共进晚餐吗?"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-tex" data-language="tex"><code class="language-tex">Mike不能一起吃饭!
+
+Tom, 我可以邀请你共进晚餐吗?
+John, 我可以邀请你共进晚餐吗?
+Bob, 我可以邀请你共进晚餐吗?
+Padma, 我可以邀请你共进晚餐吗?<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="六、添加嘉宾"><a href="#六、添加嘉宾" class="headerlink" title="六、添加嘉宾"></a>六、添加嘉宾</h4><blockquote>
+<p>你刚找到了一个更大的餐桌，可容纳更多的嘉宾。请想想你还想邀请哪三位嘉宾。</p>
+<p>以完成练习4或练习5时编写的程序为基础，在程序末尾添加一条print语句，指出你找到了一个更大的餐桌。</p>
+<p>使用insert()将一位新嘉宾添加到名单开头。</p>
+<p>使用insert()将另一位新嘉宾添加到名单中间。</p>
+<p>使用append()将最后一位新嘉宾添加到名单末尾。</p>
+<p>打印一系列消息，向名单中的每位嘉宾发出邀请</p>
+</blockquote>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"我找到了一个更大的餐桌!"</span> <span class="token operator">+</span> <span class="token string">"\n"</span><span class="token punctuation">)</span>
+guests<span class="token punctuation">.</span>insert<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">'zhangsan'</span><span class="token punctuation">)</span>
+guests<span class="token punctuation">.</span>insert<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token string">'lisi'</span><span class="token punctuation">)</span>
+guests<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token string">'wangwu'</span><span class="token punctuation">)</span>
+<span class="token keyword">for</span> guest <span class="token keyword">in</span> guests<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>guest <span class="token operator">+</span> <span class="token string">", 我可以邀请你共进晚餐吗?"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-tex" data-language="tex"><code class="language-tex">我找到了一个更大的餐桌!
+
+zhangsan, 我可以邀请你共进晚餐吗?
+Tom, 我可以邀请你共进晚餐吗?
+John, 我可以邀请你共进晚餐吗?
+lisi, 我可以邀请你共进晚餐吗?
+Bob, 我可以邀请你共进晚餐吗?
+Padma, 我可以邀请你共进晚餐吗?
+wangwu, 我可以邀请你共进晚餐吗?<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="七、缩减名单"><a href="#七、缩减名单" class="headerlink" title="七、缩减名单"></a>七、缩减名单</h4><p>你刚得知新购买的餐桌无法及时送达，因此只能邀请两位嘉宾。</p>
+<blockquote>
+<p>以完成练习6时编写的程序为基础，在程序末尾添加一行代码，打印一条你只能邀请两位嘉宾共进晚餐的消息。</p>
+<p>使用 pop()不断地删除名单中的嘉宾，直到只有两位嘉宾为止。每次从名单中弹出一位嘉宾时，都打印一条消息，让该嘉宾知悉你很抱歉，无法邀请他来共进晚餐。</p>
+<p>对于余下的两位嘉宾中的每一位，都打印一条消息，指出他依然在受邀人之列。</p>
+<p>使用del()将最后两位嘉宾从名单中删除，让名单变成空的。打印该名单，核实程序结束时名单确实是空的</p>
+</blockquote>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"sorry,我只能邀请两位嘉宾共进晚餐!"</span> <span class="token operator">+</span> <span class="token string">"\n"</span><span class="token punctuation">)</span>
+<span class="token keyword">while</span> <span class="token builtin">len</span><span class="token punctuation">(</span>guests<span class="token punctuation">)</span> <span class="token operator">></span> <span class="token number">2</span><span class="token punctuation">:</span>
+    honored <span class="token operator">=</span> guests<span class="token punctuation">.</span>pop<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>honored <span class="token operator">+</span> <span class="token string">",我很抱歉,我不能邀请你一起共进晚餐!"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"------------"</span><span class="token punctuation">)</span>
+<span class="token keyword">for</span> guest <span class="token keyword">in</span> guests<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>guest <span class="token operator">+</span> <span class="token string">", 我仍然希望你能和我一起吃饭!"</span><span class="token punctuation">)</span>
+<span class="token keyword">del</span> guests<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+<span class="token keyword">del</span> guests<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>guests<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-tex" data-language="tex"><code class="language-tex">sorry,我只能邀请两位嘉宾共进晚餐!
+
+wangwu,我很抱歉,我不能邀请你一起共进晚餐!
+Padma,我很抱歉,我不能邀请你一起共进晚餐!
+Bob,我很抱歉,我不能邀请你一起共进晚餐!
+lisi,我很抱歉,我不能邀请你一起共进晚餐!
+John,我很抱歉,我不能邀请你一起共进晚餐!
+------------
+zhangsan, 我仍然希望你能和我一起吃饭!
+Tom, 我仍然希望你能和我一起吃饭!
+[]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="八、放眼世界"><a href="#八、放眼世界" class="headerlink" title="八、放眼世界"></a>八、放眼世界</h4><blockquote>
+<p>想出至少5个你渴望去旅游的地方。</p>
+<p>​    将这些地方存储在一个列表中，并确保其中的元素不是按字母顺序排列的。</p>
+<p>​    按原始排列顺序打印该列表。不要考虑输出是否整洁的问题，只管打印原始Python列表。</p>
+<p>​    使用sorted()按字母顺序打印这个列表，同时不要修改它。</p>
+<p>​    再次打印该列表，核实排列顺序未变。</p>
+<p>​    使用sorted()按与字母顺序相反的顺序打印这个列表， 同时不要修改它。</p>
+<p>​    再次打印该列表，核实排列顺序未变。</p>
+<p>​    使用reverse()修改列表元素的排列顺序。打印该列表，核实排列顺序确实变了。</p>
+<p>​    使用reverse()再次修改列表元素的排列顺序。打印该列表，核实已恢复到原来的排列顺序。</p>
+<p>​    使用sort()修改该列表，使其元素按字母顺序排列。打印该列表，核实排列顺序确实变了。</p>
+<p>​    使用sort()修改该列表，使其元素按与字母顺序相反的顺序排列。打印该列表，核实排列顺序确实变了</p>
+</blockquote>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">resort <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token string">"Santorini"</span><span class="token punctuation">,</span> <span class="token string">"Aegean Sea"</span><span class="token punctuation">,</span> <span class="token string">"Pink Sands"</span><span class="token punctuation">,</span> <span class="token string">"Rose Lake"</span><span class="token punctuation">,</span> <span class="token string">"The blue hole"</span>
+<span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>resort<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"------------"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">sorted</span><span class="token punctuation">(</span>resort<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"------------"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>resort<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"------------"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">sorted</span><span class="token punctuation">(</span>resort<span class="token punctuation">,</span> reverse<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"------------"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>resort<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"------------"</span><span class="token punctuation">)</span>
+resort<span class="token punctuation">.</span>reverse<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>resort<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"------------"</span><span class="token punctuation">)</span>
+resort<span class="token punctuation">.</span>reverse<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>resort<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"------------"</span><span class="token punctuation">)</span>
+resort<span class="token punctuation">.</span>sort<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>resort<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"------------"</span><span class="token punctuation">)</span>
+resort<span class="token punctuation">.</span>sort<span class="token punctuation">(</span>reverse<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>resort<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-tex" data-language="tex"><code class="language-tex">[&#39;Santorini&#39;, &#39;Aegean Sea&#39;, &#39;Pink Sands&#39;, &#39;Rose Lake&#39;, &#39;The blue hole&#39;]
+------------
+[&#39;Aegean Sea&#39;, &#39;Pink Sands&#39;, &#39;Rose Lake&#39;, &#39;Santorini&#39;, &#39;The blue hole&#39;]
+------------
+[&#39;Santorini&#39;, &#39;Aegean Sea&#39;, &#39;Pink Sands&#39;, &#39;Rose Lake&#39;, &#39;The blue hole&#39;]
+------------
+[&#39;The blue hole&#39;, &#39;Santorini&#39;, &#39;Rose Lake&#39;, &#39;Pink Sands&#39;, &#39;Aegean Sea&#39;]
+------------
+[&#39;Santorini&#39;, &#39;Aegean Sea&#39;, &#39;Pink Sands&#39;, &#39;Rose Lake&#39;, &#39;The blue hole&#39;]
+------------
+[&#39;The blue hole&#39;, &#39;Rose Lake&#39;, &#39;Pink Sands&#39;, &#39;Aegean Sea&#39;, &#39;Santorini&#39;]
+------------
+[&#39;Santorini&#39;, &#39;Aegean Sea&#39;, &#39;Pink Sands&#39;, &#39;Rose Lake&#39;, &#39;The blue hole&#39;]
+------------
+[&#39;Aegean Sea&#39;, &#39;Pink Sands&#39;, &#39;Rose Lake&#39;, &#39;Santorini&#39;, &#39;The blue hole&#39;]
+------------
+[&#39;The blue hole&#39;, &#39;Santorini&#39;, &#39;Rose Lake&#39;, &#39;Pink Sands&#39;, &#39;Aegean Sea&#39;]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="九、晚餐嘉宾"><a href="#九、晚餐嘉宾" class="headerlink" title="九、晚餐嘉宾"></a>九、晚餐嘉宾</h4><blockquote>
+<p>使用len()打印一条消息，指出你邀请了多少位嘉宾来与你共进晚餐</p>
+</blockquote>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">guests <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"Tom"</span><span class="token punctuation">,</span> <span class="token string">"John"</span><span class="token punctuation">,</span> <span class="token string">"Mike"</span><span class="token punctuation">,</span> <span class="token string">"Padma"</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"我一共邀请了"</span> <span class="token operator">+</span> <span class="token builtin">str</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>guests<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"位嘉宾"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-tex" data-language="tex"><code class="language-tex">我一共邀请了4位嘉宾<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
 
                 
             </div>
@@ -494,7 +699,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://pdxblog.top/post/undefined.html">https://pdxblog.top/post/undefined.html</a>
+                    <a href="https://pdxblog.top/post/c09e5583.html">https://pdxblog.top/post/c09e5583.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -531,7 +736,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/Python%E4%B8%80%E7%B3%BB%E5%88%97%E7%BB%83%E4%B9%A0%E9%A2%98/">
+                                    <span class="chip bg-color">Python一系列练习题</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -703,18 +912,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/post/undefined.html">
+                <a href="/post/fbd480d6.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="text">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="Apache安装部署及工作模式">
                         
-                        <span class="card-title">text</span>
+                        <span class="card-title">Apache安装部署及工作模式</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -724,18 +932,29 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-24
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-06-08
+                        </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Echo
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%9E%B6%E6%9E%84/" class="post-category">
+                                    架构
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E6%9E%B6%E6%9E%84/">
+                        <span class="chip bg-color">架构</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -743,16 +962,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/post/undefined.html">
+                <a href="/post/da3fbd60.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="text">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="for循环和原作练习题">
                         
-                        <span class="card-title">text</span>
+                        <span class="card-title">for循环和原作练习题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -763,17 +982,28 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-24
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-29
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Echo
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Python%E4%B8%80%E4%BA%9B%E5%88%97%E7%BB%83%E4%B9%A0%E9%A2%98/" class="post-category">
+                                    Python一些列练习题
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Python%E4%B8%80%E7%B3%BB%E5%88%97%E7%BB%83%E4%B9%A0%E9%A2%98/">
+                        <span class="chip bg-color">Python一系列练习题</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
