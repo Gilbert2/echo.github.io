@@ -6,8 +6,8 @@
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>新闻 |  Echo’s blog</title>
-  <title>新闻 |  Echo’s blog</title>
+  <title>text |  Echo’s blog</title>
+  <title>text |  Echo’s blog</title>
   
     <link rel="apple-touch-icon" sizes="57x57" href="/images/webclip/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/images/webclip/apple-touch-icon-72x72.png">
@@ -57,7 +57,7 @@
   </li>
   
     
-  <li class="nav-item active">
+  <li class="nav-item ">
     <a class="nav-item-link" href="/archives">新闻</a>
   </li>
   
@@ -78,68 +78,47 @@
 
     <section>
       <div class="container">
-  <div class="page-heading">
-  <!-- page-type-title -->
+  <article id="post-text" class="article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   
+  
+  <div class="artcle-cover mb-5">
     
-<h1 class="page-type-title">新闻</h1>
-  
-  <!-- page-type-slogan -->
-  <h5 class="slogan font-w-lighter text-gray">
-    
-    汇聚热点话题 打造创新思路
-    
-  </h5>
-</div>
-  
-  
-  
-  
-  
-  
-
-<section class="archives-wrap">
-  <div class="archive-year-wrap">
-    <a href="/archives/2022" class="archive-year">2022</a>
   </div>
-  <div class="archives">
-    <div class="row flex-wrap">
-      
-      <div class="col-3">
-  <article class="archive-article archive-type-post">
-    <div class="card rounded">
-      
-      <div class="card-body bg-light">
-        
   
-    <h5 class="article-title mb-0 line-clamp line-clamp-1" itemprop="name">
-      <a href="/root">text</a>
-    </h5>
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+      
+  
+    <h1 class="article-title" itemprop="name">
+      text
+    </h1>
   
 
+      <div class="article-meta">
         <time class="text-gray" datetime="2022-03-24T06:21:16.000Z" itemprop="datePublished">
   2022-03-24
 </time>
-        <div class="card-text mt-3 line-clamp line-clamp-2"></div>
-        <hr class="hr">
-        
-        <div class="article-more-link">
-          <a href="/root#more">阅读全文</a>
-        </div>
         
       </div>
-    </div>
-  </article>
-</div>
       
-      
+    </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      <p>hello this is test!!!</p>
+
     </div>
+    <footer class="article-footer">
+      
+    </footer>
   </div>
-</section>
+  
+  
+    
 
-
-
-
+  
+</article>
 </div>
     </section>
     <footer class="footer pt-5 mt-5">
@@ -194,7 +173,7 @@
   </li>
   
     
-  <li class="nav-item active">
+  <li class="nav-item ">
     <a class="nav-item-link" href="/archives">新闻</a>
   </li>
   
